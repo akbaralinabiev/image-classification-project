@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image Captioning AI | Register</title>
+	<link rel="icon" href="../assets/logo.svg">
+	<link rel="stylesheet" type="text/css" href="../css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+</head>
+
+<body class="demo-5">
+	
+	<main>
+		<div class="content content--fixed">
+			<header class="codrops-header">
+				<h1 class="codrops-header__title">Welcome back!</h1>
+			</header>
+		</div>
+		<div class="content">
+			<form class="form" id="registerForm">
+				<div class="form__title">Create an account</div>
+				<div class="form__item">
+					<label class="form__label" for="fullname">Full Name</label>
+					<input class="form__input" type="text" name="fullname" id="fullname" autocomplete="off" required>
+					<span class="form__placeholder">Full Name</span>
+				</div>
+				<div class="form__item">
+					<label class="form__label" for="email">Email Address</label>
+					<input class="form__input" type="email" name="email" id="email" autocomplete="off">
+					<span class="form__placeholder">Email Address</span>
+					<div id="toastMessage" class="toast-message"></div>
+				</div>
+				<div class="form__item">
+					<label class="form__label" for="password">Password</label>
+					<input class="form__input password-input" type="password" name="password" id="password"
+						autocomplete="off" maxlength="20">
+					<span class="form__placeholder">Password</span>
+					<span id="toggle-password" class="toggle-password">
+						<img src="../assets/eye.svg" alt="">
+					</span>
+				</div>
+				<div class="form__item form_item_buttons">
+					<a class="form_link" href="./login.html">Login</a>
+					<button id="registerButton" class="form__button" type="button">Sign up</button>
+				</div>
+			</form>
+		</div>
+	</main>
+	<script src="../js/base.js"></script>
+	<script src="../js/TweenMax.min.js"></script>
+	<script src="../js/nearby.js"></script>
+	<script src="../js/charming.min.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/showPassword.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+	<script src="../firebase/register.js"></script>
+</body>
+
+</html>
