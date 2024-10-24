@@ -1,57 +1,101 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Image Captioning AI | Login</title>
-		<link rel="icon" href="../assets/logo.svg">
-		<link rel="stylesheet" type="text/css" href="../css/base.css" />
-		<link rel="stylesheet" type="text/css" href="../css/main.css" />
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-	</head>
-	<body class="demo-5">
-		<main>
-			<div class="content content--fixed">
-				<header class="codrops-header">
-					<h1 class="codrops-header__title">Welcome back!</h1>
-				</header>
-			</div>
-			<div class="content">
-				<form class="form">
-					<a class="logo dib" href="../index.html" aria-label="Wave logo homepage"><img src="../assets/logo.svg" alt=""></a>
-					<div class="form__title">>Login to your account</div>
-					<div class="form__item">
-						<label class="form__label" for="email">Email Address</label>
-						<input class="form__input" type="email" name="email" id="email" autocomplete="off" required>
-						<span class="form__placeholder">Email Address</span>
-					</div>
-					<div class="form__item">
-						<label class="form__label" for="email">Password</label>
-						<input class="form__input" type="password" name="password" id="password" autocomplete="off" required>
-						<span class="form__placeholder">Password</span>
-						<span id="toggle-password" class="toggle-password">
-							<img src="../assets/eye.svg" alt="">
-						</span>
-					</div>
-					<div id="toastMessage" class="toast-message"></div>
-					<div class="form__item form_item_buttons">
-						<a class="form_link" href="./register.html">Register</a>
-						<button id="loginButton" class="form__button" type="button">Login</button>
-					</div>
-					<div class="form__item">
-						<a href="./forgotPassword.html" class="form_link-forgot">forgot password?</a>
-					</div>
-				</form>
-			</div>
-		</main>
-		<script src="../js/base.js"></script>
-		<script src="../js/nearby.js"></script>
-		<script src="../js/TweenMax.min.js"></script>
-		<script src="../js/charming.min.js"></script>
-		<script src="../js/main.js"></script>
-		<script src="../js/showPassword.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
-		<script src="../firebase/login.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Image Classifying AI | Login</title>
+    <link rel="icon" href="../assets/logo.svg" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <script>
+      document.documentElement.className = 'js';
+      var supportsCssVars = function () {
+        var e,
+          t = document.createElement('style');
+        return (
+          (t.innerHTML = 'root: { --tmp-var: bold; }'),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports('font-weight', 'var(--tmp-var)')
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          'Please view this demo in a modern browser that supports CSS Variables.'
+        );
+    </script>
+  </head>
+  <body class="demo-5">
+    <main>
+      <div class="content content--fixed">
+        <header class="codrops-header">
+          <h1 class="codrops-header__title">Welcome back!</h1>
+        </header>
+      </div>
+      <div class="content">
+        <form class="form">
+          <a
+            class="logo dib"
+            href="../index.html"
+            aria-label="Wave logo homepage"
+            ><img src="../assets/logo.svg" alt=""
+          /></a>
+          <div class="form__title">>Login to your account</div>
+          <div class="form__item">
+            <label class="form__label" for="email">Email Address</label>
+            <input
+              class="form__input"
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="off"
+              required
+            />
+            <span class="form__placeholder">Email Address</span>
+          </div>
+          <div class="form__item">
+            <label class="form__label" for="email">Password</label>
+            <input
+              class="form__input"
+              type="password"
+              name="password"
+              id="password"
+              autocomplete="off"
+              required
+            />
+            <span class="form__placeholder">Password</span>
+            <span id="toggle-password" class="toggle-password">
+              <img src="../assets/eye.svg" alt="" />
+            </span>
+          </div>
+          <div id="toastMessage" class="toast-message"></div>
+          <div class="form__item form_item_buttons">
+            <a class="form_link" href="./register.html">Register</a>
+            <button id="loginButton" class="form__button" type="button">
+              Login
+            </button>
+          </div>
+          <div class="form__item">
+            <a href="./forgotPassword.html" class="form_link-forgot"
+              >forgot password?</a
+            >
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="../js/base.js"></script>
+    <script src="../js/nearby.js"></script>
+    <script src="../js/TweenMax.min.js"></script>
+    <script src="../js/charming.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/showPassword.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+    <script src="../firebase/login.js"></script>
+  </body>
 </html>
