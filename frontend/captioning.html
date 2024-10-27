@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Image Classifying AI</title>
+  <link rel="icon" href="../assets/logo.svg"/>
+  <link rel="stylesheet" type="text/css" href="../frontend/main.css" />
+  <link rel="stylesheet" type="text/css" href="../frontend/captioning.css" />
+</head>
+
+<body class="demo-5">
+
+  <main>
+    <div class="header">
+      <img src="../assets/logo-reverse.svg" alt="" />
+      <h1 class="title">Image Classifying AI</h1>
+    </div>
+    <div class="back-home-div">
+      <a onclick="clearImage()" class="form_link-forgot clear back-home">clear <img
+        src="../assets/Iconly-Delete-1714337985967.svg" alt="" /></a>
+      </div>
+      <div class="upload-container">
+        <div class="upload-frame">
+          <div class="upload-button-container">
+            <label for="fileInput" class="custom-upload-btn">Upload Image</label>
+            <input type="file" id="fileInput" accept="image/*" onchange="previewImage(event)" />
+          </div>
+          <div class="image-info" id="image-info"></div>
+        </div>
+        <div class="description-frame">
+          <div class="image-preview" id="imagePreview">
+            <img id="image-preview" src="" alt="Image Preview" style="display: none" />
+          </div>
+          <div class="modal" id="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+          </div>
+          <div class="caption-container">
+            <p id="imageDescription">Image classification will appear here...</p>
+            <div class="caption-btn-container">
+              <button class="caption-btn" id="generateCaptionBtn" onclick="getCaption()">Classify the image</button>
+              <p id="percentageCounter"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+  <script src="main.js"></script>
+  <script src="imgUpload.js"></script>
+  <script src="getClass.js"></script>
+</body>
+
+</html>
