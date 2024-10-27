@@ -43,7 +43,8 @@ This is a Flask-based API for image classification using a pre-trained ResNet mo
 2. The API will be available at http://127.0.0.1:5000.
 
 3. To classify an image, send a POST request to the /classify endpoint with the image file included in the form-data under the key image. You can use tools like Postman or cURL to test the API. Here’s an example using cURL:
-   'curl -X POST -F "image=@path_to_your_image.jpg" http://127.0.0.1:5000/classify'
+
+   "curl -X POST -F "image=@path_to_your_image.jpg" http://127.0.0.1:5000/classify"
 
 ## Acknowledgments
 
