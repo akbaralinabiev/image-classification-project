@@ -8,6 +8,10 @@ This is a Flask-based API for image classification using a pre-trained ResNet mo
 - Returns predicted class and confidence level
 - Supports CORS for cross-origin requests
 
+## Examples
+![image_2024-10-27_23-51-48](https://github.com/user-attachments/assets/1cd3a698-ac09-428a-a59f-150fb404e2c1)
+![image_2024-10-27_23-52-00](https://github.com/user-attachments/assets/d3f5fc09-ebe7-4970-b663-61f27899fcb6)
+
 ## Requirements
 
 - Python 3.x
