@@ -48,7 +48,7 @@ This is a Flask-based API for image classification using a pre-trained ResNet mo
 
 ## Acknowledgments
 
-- Made by [Akbarali Nabiev](https://github.com/akbaralinabiev) and [Bekhzod Allaev](https://github.com/bekhzodallaev) for the Machine Learning class project.
+- Made by [Akbarali Nabiev](https://github.com/akbaralinabiev) and [Bekhzod Allaev](https://github.com/bekhzodallaev) for the Deep Learning class project.
 - Hugging Face Transformers: A library providing state-of-the-art machine learning models.
 - PyTorch: An open-source machine learning library used for tensor computation and deep learning.
 - Flask: A lightweight WSGI web application framework for Python.
