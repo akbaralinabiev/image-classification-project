@@ -26,8 +26,8 @@ This is a Flask-based API for image classification using a pre-trained ResNet mo
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/image-classification-api.git
-   cd image-classification-api
+   git clone git@github.com:akbaralinabiev/image-classification-project.git
+   cd image-classification-project
 
 2. Create a virtual environment:
    ```bash
